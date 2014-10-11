@@ -32,15 +32,15 @@ png( file = "plot4.png" ,width = 480, height = 480)
 ##The Code Makes the Plots
 par(mfrow = c(2,2))
 ##1
-plot(data[,2],data[,3], type = "l" , xlab = "",ylab = "Global Active Power",cex.lab = 0.7, cex.axis = 0.7)
+plot(data[,2],data[,3], type = "l" , xlab = "",ylab = "Global Active Power",cex.lab = 0.9, cex.axis = 0.9)
 ##2
-plot(data[,2],data[,5], type = "l" , xlab = "datetime",ylab = "Voltage",cex.lab = 0.7, cex.axis = 0.7)
+plot(data[,2],data[,5], type = "l" , xlab = "datetime",ylab = "Voltage",cex.lab = 0.9, cex.axis = 0.9)
 ##3
-with(data,plot(data[,2],data[,7],type = "n", yaxp = c(0,30,3), xlab = "",ylab = "Energy sub metering",mar = c(2,2,2,2),cex.lab = 0.7, cex.axis = 0.7))
+with(data,plot(data[,2],data[,7],type = "n", yaxp = c(0,30,3), xlab = "",ylab = "Energy sub metering",mar = c(2,2,2,2),cex.lab = 0.9, cex.axis = 0.9))
 with(data, points(data[,2],data[,7], type = "l"))
 with(data, points(data[,2],data[,8], type = "l", col = "red"))
 with(data, points(data[,2],data[,9], type = "l", col = "blue"))
 legend("topright",  lty = 1, bty = "n", cex = 0.9, col = c("black", "red","blue"), legend = c("Sub_metering_1","Sub_metering_2","Sub_metering_3"))
 ##4
-plot(data[,2],data[,4], type = "l" , xlab = "datetime",ylab = "Global_reactive_power",cex.lab = 0.7, cex.axis = 0.7)
+plot(data[,2],data[,4], type = "l" , xlab = "datetime",ylab = "Global_reactive_power",cex.lab = 0.9, cex.axis = 0.9)
 dev.off()

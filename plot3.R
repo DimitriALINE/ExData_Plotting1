@@ -28,7 +28,7 @@ png( file = "plot3.png" ,width = 480, height = 480)
 
 ##The Code Makes the Plot
 par(mfrow = c(1,1))
-with(data,plot(data[,2],data[,7],type = "n", yaxp = c(0,30,3), xlab = "",ylab = "Energy sub metering",mar = c(2,2,2,2),cex.lab = 0.7, cex.axis = 0.7))
+with(data,plot(data[,2],data[,7],type = "n", yaxp = c(0,30,3), xlab = "",ylab = "Energy sub metering",mar = c(2,2,2,2),cex.lab = 0.8, cex.axis = 0.8))
 with(data, points(data[,2],data[,7], type = "l"))
 with(data, points(data[,2],data[,8], type = "l", col = "red"))
 with(data, points(data[,2],data[,9], type = "l", col = "blue"))
